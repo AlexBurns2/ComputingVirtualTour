@@ -1,8 +1,8 @@
 /* Pannellum 2.5.6, https://github.com/mpetroff/pannellum */
 :root {
-    --bgcolorlight: #DCDCDD;
-    --bordercolorlight: #C5C3C6;
-    --fontcolorlight: #000000;
+    --bgcolorlight: #00ff37;
+    --bordercolorlight: #a007ec;
+    --fontcolorlight: #fa1212;
     --bgcolordark: #46494C;
     --bordercolordark: #668586;
 }

@@ -3,12 +3,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skibidi</title>
-    <link rel="stylesheet" href="pannellum.css"/>
+    <link id="theme-link" rel="stylesheet" href="pannellum.css">
     <script type="text/javascript" src="pannellum.js"></script>
     <style>
     #panorama {
         width: 95%;
         height: 95%;
+    }
+    #theme-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      z-index: 1000;
     }
     </style>
 </head>
@@ -62,6 +70,27 @@ pannellum.viewer('panorama', {
 });
 </script>
 
+  <button id="theme-toggle">Toggle Dark Mode</button>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+    const themeLink = document.getElementById('theme-link');
+
+    // Load saved mode from localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+      themeLink.href = 'pannellumdark.css';
+    }
+
+    toggle.addEventListener('click', () => {
+      if (themeLink.getAttribute('href') === 'pannellum.css') {
+        themeLink.href = 'pannellumdark.css';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeLink.href = 'pannellum.css';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
 
 </body>
 </html>
