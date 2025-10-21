@@ -10,14 +10,6 @@
         width: 95%;
         height: 95%;
     }
-    #theme-toggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 10px 15px;
-      cursor: pointer;
-      z-index: 1000;
-    }
     </style>
 </head>
 <body>
@@ -70,7 +62,8 @@ pannellum.viewer('panorama', {
 });
 </script>
 
-  <button id="theme-toggle">Toggle Dark Mode</button>
+  <button id="theme-toggle" class="button">Toggle Dark Mode</button>
+
 
 <script>
     const toggle = document.getElementById('theme-toggle');

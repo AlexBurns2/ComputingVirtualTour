@@ -11,6 +11,18 @@ body {
     text-align: center;
     background-color: var(--bgcolorlight);
   }
+  .button {
+ position: absolute;
+  top: 38px;
+  right: 28px;
+  background-color: var(--bgcolorlight);
+  border: 5px solid var(--bordercolorlight);
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 2;
+  transform: translateZ(9999px);
+}
 .pnlm-container {
     border-style: solid;
       border-width: 5px;
@@ -219,11 +231,16 @@ body {
     text-align: center;
     font-size: 20px;
     display: none;
-    color: #fff
+    color: #fff;
+             border-style: solid;
+      border-width: 5px;
+        border-color:var(--bordercolorlight);
+          border-radius: 10px;
 }
 
 .pnlm-load-box p {
     margin: 20px 0
+    
 }
 
 .pnlm-lbox {
@@ -326,7 +343,7 @@ body {
 }
 
 .pnlm-load-button:hover {
-    background-color: var(--bgcolorlight); 
+    background-color: var(--bordercolordark); 
 }
 
 .pnlm-load-button p {
