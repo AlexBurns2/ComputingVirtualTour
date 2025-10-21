@@ -196,7 +196,7 @@ body {
     background-color: rgba(0,0,0,0.7);
     border-radius: 0 3px 3px 0;
     padding-right: 10px;
-    color: #fff;
+    color: var(--fontcolorlight);
     text-align: left;
     display: none;
     z-index: 2;
@@ -231,7 +231,7 @@ body {
     text-align: center;
     font-size: 20px;
     display: none;
-    color: #fff;
+    color: var(--fontcolorlight);
                  border-style: solid;
       border-width: 5px;
         border-color:var(--bordercolorlight);
@@ -263,7 +263,7 @@ body {
     -webkit-animation-timing-function: linear;
     height: 10px;
     width: 10px;
-    background-color: #fff;
+    background-color: var(--fontcolorlight);
     position: relative
 }
 
@@ -362,12 +362,12 @@ body {
     border-radius: 3px;
     display: table;
     text-align: center;
-    color: #fff;
+    color: var(--fontcolorlight);
     table-layout: fixed
 }
 
 .pnlm-info-box a,.pnlm-author-box a {
-    color: #fff;
+    color: var(--fontcolorlight);
     word-wrap: break-word;
     overflow-wrap: break-word
 }
@@ -505,12 +505,12 @@ div.pnlm-tooltip:hover span:after {
 .pnlm-lbar {
     width: 150px;
     margin: 0 auto;
-    border: #fff 1px solid;
+    border: var(--fontcolorlight) 1px solid;
     height: 6px
 }
 
 .pnlm-lbar-fill {
-    background: #fff;
+    background: var(--fontcolorlight);
     height: 100%;
     width: 0
 }
