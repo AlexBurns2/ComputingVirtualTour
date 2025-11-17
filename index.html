@@ -14,18 +14,35 @@
     </style>
 </head>
 <body>
-  
+
 <div id="panorama">
 </div>
 <script>
-  
-pannellum.viewer('panorama', {   
+
+pannellum.viewer('panorama', {
     "default": {
-        "firstScene": "gwoc1",
+        "firstScene": "gwoc4",
         "sceneFadeDuration": 1000
     },
     "hotSpotDebug": true,
     "scenes": {
+        "gwoc0": {
+            "hfov": 110,
+            "type": "equirectangular",
+            "panorama": "sites/gwoc0.jpg",
+            "autoRotate": 2,
+            "compass": false,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 200,
+                    "type": "scene",
+                    "text": "gwoc1",
+                    "sceneId": "gwoc1"
+                }
+            ]
+        },
+
         "gwoc1": {
             "hfov": 110,
             "type": "equirectangular",
@@ -78,8 +95,8 @@ pannellum.viewer('panorama', {
             "compass": false,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -5,
+                    "yaw": 30,
                     "type": "scene",
                     "text": "gwoc2",
                     "sceneId": "gwoc2",
@@ -87,8 +104,8 @@ pannellum.viewer('panorama', {
                     "targetPitch": 2
                 },
                 {
-                    "pitch": -0.6,
-                    "yaw": 150,
+                    "pitch": 10,
+                    "yaw": 210,
                     "type": "scene",
                     "text": "gwoc4",
                     "sceneId": "gwoc4",
@@ -105,8 +122,8 @@ pannellum.viewer('panorama', {
             "compass": false,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": 5,
+                    "yaw": 110,
                     "type": "scene",
                     "text": "gwoc3",
                     "sceneId": "gwoc3",
@@ -114,8 +131,8 @@ pannellum.viewer('panorama', {
                     "targetPitch": 2
                 },
                 {
-                    "pitch": -0.6,
-                    "yaw": 150,
+                    "pitch": -5,
+                    "yaw": 245,
                     "type": "scene",
                     "text": "gwoc5",
                     "sceneId": "gwoc5",
@@ -167,6 +184,6 @@ pannellum.viewer('panorama', {
       }
     });
   </script>
- 
+
 </body>
 </html>
