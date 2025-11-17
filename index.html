@@ -15,7 +15,6 @@
 <body>
   
 <div id="panorama">
-  
 </div>
 <script>
   
@@ -37,7 +36,7 @@ pannellum.viewer('panorama', {
                     "pitch": -2.1,
                     "yaw": 132.9,
                     "type": "scene",
-                    "text": "",
+                    "text": "gwoc2",
                     "sceneId": "gwoc2"
                 }
             ]
@@ -51,11 +50,38 @@ pannellum.viewer('panorama', {
             "compass": false,
             "hotSpots": [
                 {
+                    "pitch": -1,
+                    "yaw": 100,
+                    "type": "scene",
+                    "text": "gwoc1",
+                    "sceneId": "gwoc1",
+                    "targetYaw": -50,
+                    "targetPitch": 10
+                },
+                {
                     "pitch": -0.6,
                     "yaw": 37.1,
                     "type": "scene",
-                    "text": "",
-                    "sceneId": "gwoc1",
+                    "text": "gwoc3",
+                    "sceneId": "gwoc3",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "gwoc3": {
+            "hfov": 110,
+            "type": "equirectangular",
+            "panorama": "sites/gwoc3.jpg",
+            "autoRotate": -2,
+            "compass": false,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "gwoc2",
+                    "sceneId": "gwoc2",
                     "targetYaw": -23,
                     "targetPitch": 2
                 }
