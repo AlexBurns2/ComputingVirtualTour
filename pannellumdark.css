@@ -1,7 +1,7 @@
 /* Pannellum 2.5.6, https://github.com/mpetroff/pannellum */
 :root {
     --bgcolorlight: #181818;
-    --bordercolorlight: #4e5255;
+    --bordercolorlight: #2c15b3;
     --fontcolorlight: #dfdfdf;
     --bgcolordark: #7e7e7e;
     --bordercolordark: #668586;
@@ -27,7 +27,7 @@ body {
     border-style: solid;
       border-width: 5px;
               border-color:var(--bordercolorlight);
-          border-radius: 10px;
+          border-radius: 30px;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -40,8 +40,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Helvetica,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
-    background: var(--bgcolorlight) url('images/fantastic2.png') repeat;
-    background-size: 100% 100%;
+    background: url('images/topo4.png') repeat;
+    background-size: 1024px 1024px;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -52,6 +52,7 @@ body {
     line-height: 1.4;
     contain: content
 }
+
 
 .pnlm-container * {
     box-sizing: content-box
@@ -111,11 +112,11 @@ body {
 
 .pnlm-controls {
     margin-top: 10px;
-        margin-left: 5px;
+    margin-left: 5px;
     background-color: var(--bgcolorlight);
     border: 5px solid;
     border-color: var(--bordercolorlight);
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     z-index: 2;
     -webkit-transform: translateZ(9999px);
@@ -136,6 +137,7 @@ body {
 .pnlm-zoom-controls {
     width: 26px;
     height: 52px;
+    background-color: #bdbdbd;
     color: #fff
 }
 
@@ -195,9 +197,9 @@ body {
     position: absolute;
     bottom: 4px;
     background-color: rgba(0,0,0,0.7);
-    border-radius: 0 3px 3px 0;
+    border-radius: 30px;
     padding-right: 10px;
-    color: #fff;
+    color: var(--fontcolorlight);
     text-align: left;
     display: none;
     z-index: 2;
@@ -219,7 +221,6 @@ body {
     display: table;
     padding-left: 5px
 }
-
 .pnlm-load-box {
     position: absolute;
     top: 50%;
@@ -228,20 +229,18 @@ body {
     height: 150px;
     margin: -75px 0 0 -100px;
     background-color: var(--bgcolorlight); 
-    border-radius: 3px;
+    border-radius: 30px;
     text-align: center;
     font-size: 20px;
     display: none;
-    color: #fff;
-             border-style: solid;
+    color: var(--fontcolorlight);
+                 border-style: solid;
       border-width: 5px;
         border-color:var(--bordercolorlight);
-          border-radius: 10px;
 }
 
 .pnlm-load-box p {
     margin: 20px 0
-    
 }
 
 .pnlm-lbox {
@@ -265,9 +264,10 @@ body {
     -webkit-animation-timing-function: linear;
     height: 10px;
     width: 10px;
-    background-color: #fff;
+    background-color: var(--fontcolorlight);
     position: relative
 }
+
 
 @keyframes pnlm-mv {
     from {
@@ -327,7 +327,7 @@ body {
      border-style: solid;
       border-width: 5px;
         border-color:var(--bordercolorlight);
-          border-radius: 10px;
+          border-radius: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -335,7 +335,6 @@ body {
     height: 100px;
     margin: -50px 0 0 -100px;
     background-color: var(--bgcolorlight); 
-    border-radius: 3px;
     text-align: center;
     font-size: 20px;
     display: table;
@@ -344,7 +343,7 @@ body {
 }
 
 .pnlm-load-button:hover {
-    background-color: var(--bordercolordark); 
+    background-color: var(--bgcolorlight); 
 }
 
 .pnlm-load-button p {
@@ -361,10 +360,10 @@ body {
     height: 150px;
     margin: -75px 0 0 -100px;
     background-color: #000;
-    border-radius: 3px;
+    border-radius: 30px;
     display: table;
     text-align: center;
-    color: #fff;
+    color: var(--fontcolorlight);
     table-layout: fixed
 }
 

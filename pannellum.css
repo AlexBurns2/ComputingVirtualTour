@@ -1,15 +1,11 @@
 /* Pannellum 2.5.6, https://github.com/mpetroff/pannellum */
 :root {
     /* Light Theme */
- --bgcolorlight: #89d8ff;       /* Soft light blue background */
-    --bordercolorlight: #1E3A8A;   /* Clean white borders */
-    --fontcolorlight: #1E3A8A;   /* Same blue for text */
+ --bgcolorlight: #ffffff;
+    --bordercolorlight: #899ed1;
+    --fontcolorlight: #000000;
 }
 
-html{
-  border: 10px solid var(--bordercolorlight);
-  border-radius: 30px;    
-}
 
 
 body {
@@ -45,8 +41,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Helvetica,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
-    background: url('images/fantastic2.png') repeat;
-    background-size: 100% 100%;
+    background: url('images/topo2.jpg') repeat;
+    background-size: 980px 980px;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -140,7 +136,7 @@ body {
 
 .pnlm-zoom-controls {
     width: 26px;
-    height: 52px
+    height: 52px;
 }
 
 .pnlm-zoom-in {
@@ -148,7 +144,7 @@ body {
     height: 50%;
     position: absolute;
     top: 0;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .pnlm-zoom-out {
