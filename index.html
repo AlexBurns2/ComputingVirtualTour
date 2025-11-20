@@ -20,10 +20,10 @@
         padding-bottom: 3px;
         pointer-events: none;
     }
-    
+
 
     </style>
-    </style>
+
 </head>
 <body>
 
@@ -198,6 +198,30 @@ pannellum.viewer('panorama', {
   </script>
 <div>
 
+<button id="tutorial-button">Tutorial</button>
+
+<div id="tutorial-popup">
+    <h3>Tutorial</h3>
+    <p>sdlkfjsdlkjfsjdfsdkfsjfdsf</p>
+    <button id="tutorial-close">Close</button>
 </div>
+
+<script>
+    const tutorialBtn = document.getElementById('tutorial-button');
+    const popup = document.getElementById('tutorial-popup');
+    const closeBtn = document.getElementById('tutorial-close');
+
+    tutorialBtn.onclick = () => {
+        popup.style.display = "block";
+    };
+
+    closeBtn.onclick = () => {
+        popup.style.display = "none";
+    };
+
+
+</script>
+
+
 </body>
 </html>
