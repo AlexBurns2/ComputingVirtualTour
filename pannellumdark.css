@@ -11,8 +11,8 @@ body {
     text-align: center;
     background-color: var(--bgcolorlight);
   }
-  .button {
- position: absolute;
+.button {
+  position: absolute;
   top: 38px;
   right: 28px;
   background-color: var(--bgcolorlight);

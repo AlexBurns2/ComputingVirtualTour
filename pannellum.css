@@ -65,6 +65,18 @@ body {
     z-index: 1
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .pnlm-grab {
     cursor: grab;
     cursor: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2226%22%20width%3D%2226%22%3E%0A%3Cpath%20stroke%3D%22%23000%22%20stroke-width%3D%221px%22%20fill%3D%22%23fff%22%20d%3D%22m15.3%2020.5s6.38-6.73%204.64-8.24-3.47%201.01-3.47%201.01%203.61-5.72%201.41-6.49c-2.2-0.769-3.33%204.36-3.33%204.36s0.873-5.76-1.06-5.76-1.58%205.39-1.58%205.39-0.574-4.59-2.18-4.12c-1.61%200.468-0.572%205.51-0.572%205.51s-1.58-4.89-2.93-3.79c-1.35%201.11%200.258%205.25%200.572%206.62%200.836%202.43%202.03%202.94%202.17%205.55%22%2F%3E%0A%3C%2Fsvg%3E%0A') 12 8,default
@@ -109,14 +121,13 @@ body {
     height: 100%;
     width: 100%
 }
-
 .pnlm-controls {
     margin-top: 10px;
-    margin-left: 5px;
+        margin-left: 5px;
     background-color: var(--bgcolorlight);
     border: 5px solid;
     border-color: var(--bordercolorlight);
-    border-radius: 30px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 2;
     -webkit-transform: translateZ(9999px);
@@ -136,7 +147,7 @@ body {
 
 .pnlm-zoom-controls {
     width: 26px;
-    height: 52px;
+    height: 52px
 }
 
 .pnlm-zoom-in {
@@ -144,7 +155,7 @@ body {
     height: 50%;
     position: absolute;
     top: 0;
-    border-radius: 10px;
+    border-radius: 3px 3px 0 0
 }
 
 .pnlm-zoom-out {
@@ -155,7 +166,7 @@ body {
     background-position: 0 -26px;
     border-top: 1px solid #ddd;
     border-top-color: rgba(0,0,0,0.10);
-    border-radius: 10px
+    border-radius: 0 0 3px 3px
 }
 
 .pnlm-fullscreen-toggle-button,.pnlm-orientation-button,.pnlm-hot-spot-debug-indicator {
@@ -171,7 +182,7 @@ body {
     height: 26px;
     margin: -13px 0 0 -13px;
     background-color: rgba(255,255,255,0.5);
-    border-radius: 30px;
+    border-radius: 13px;
     display: none
 }
 
@@ -195,9 +206,9 @@ body {
     position: absolute;
     bottom: 4px;
     background-color: rgba(0,0,0,0.7);
-    border-radius: 30px;
+    border-radius: 0 3px 3px 0;
     padding-right: 10px;
-    color: var(--fontcolorlight);
+    color: #fff;
     text-align: left;
     display: none;
     z-index: 2;
@@ -228,14 +239,11 @@ body {
     height: 150px;
     margin: -75px 0 0 -100px;
     background-color: var(--bgcolorlight); 
-    border-radius: 30px;
+    border-radius: 3px;
     text-align: center;
     font-size: 20px;
     display: none;
-    color: var(--fontcolorlight);
-                 border-style: solid;
-      border-width: 5px;
-        border-color:var(--bordercolorlight);
+    color: #fff
 }
 
 .pnlm-load-box p {
@@ -263,7 +271,7 @@ body {
     -webkit-animation-timing-function: linear;
     height: 10px;
     width: 10px;
-    background-color: var(--fontcolorlight);
+    background-color: #fff;
     position: relative
 }
 
@@ -325,7 +333,7 @@ body {
      border-style: solid;
       border-width: 5px;
         border-color:var(--bordercolorlight);
-          border-radius: 30px;
+          border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -333,6 +341,7 @@ body {
     height: 100px;
     margin: -50px 0 0 -100px;
     background-color: var(--bgcolorlight); 
+    border-radius: 3px;
     text-align: center;
     font-size: 20px;
     display: table;
@@ -358,15 +367,15 @@ body {
     height: 150px;
     margin: -75px 0 0 -100px;
     background-color: #000;
-    border-radius: 30px;
+    border-radius: 3px;
     display: table;
     text-align: center;
-    color: var(--fontcolorlight);
+    color: #fff;
     table-layout: fixed
 }
 
 .pnlm-info-box a,.pnlm-author-box a {
-    color: var(--fontcolorlight);
+    color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word
 }
@@ -387,7 +396,7 @@ body {
     color: #fff;
     padding: 5px 8px 5px 8px;
     background: rgba(0,0,0,0.7);
-    border-radius: 30px;
+    border-radius: 3px;
     position: absolute;
     top: 50px;
     left: 50px;
@@ -421,7 +430,7 @@ body {
 .pnlm-hotspot {
     height: 26px;
     width: 26px;
-    border-radius: 10px
+    border-radius: 13px
 }
 
 .pnlm-hotspot:hover {
@@ -439,7 +448,7 @@ body {
 div.pnlm-tooltip span {
     visibility: hidden;
     position: absolute;
-    border-radius: 30px;
+    border-radius: 3px;
     background-color: rgba(0,0,0,0.7);
     color: #fff;
     text-align: center;
@@ -504,12 +513,12 @@ div.pnlm-tooltip:hover span:after {
 .pnlm-lbar {
     width: 150px;
     margin: 0 auto;
-    border: var(--fontcolorlight) 1px solid;
+    border: #fff 1px solid;
     height: 6px
 }
 
 .pnlm-lbar-fill {
-    background: var(--fontcolorlight);
+    background: #fff;
     height: 100%;
     width: 0
 }
@@ -527,3 +536,4 @@ div.pnlm-tooltip:hover span:after {
 .pnlm-pointer {
     cursor: pointer
 }
+
