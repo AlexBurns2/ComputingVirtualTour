@@ -2,8 +2,14 @@
 :root {
     /* Light Theme */
  --bgcolorlight: #ffffff;
-    --bordercolorlight: #899ed1;
+    --bordercolorlight: #d9d9d9;
     --fontcolorlight: #000000;
+}
+
+html, body {
+  transition: background-color 0.4s ease, 
+              color 0.4s ease,
+              filter 0.4s ease;
 }
 
 
@@ -41,8 +47,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Helvetica,"Nimbus Sans L","Liberation Sans",Arial,sans-serif;
-    background: url('images/topo2.jpg') repeat;
-    background-size: 980px 980px;
+    background: url('images/andre4.svg') repeat;
+    background-size: 300px 300px;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -127,7 +133,7 @@ body {
     background-color: var(--bgcolorlight);
     border: 5px solid;
     border-color: var(--bordercolorlight);
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     z-index: 2;
     -webkit-transform: translateZ(9999px);
@@ -135,7 +141,7 @@ body {
 }
 
 .pnlm-control:hover {
-    background-color: #f8f8f8
+    background-color:     var(--bordercolorlight)
 }
 
 .pnlm-controls-container {
@@ -155,7 +161,7 @@ body {
     height: 50%;
     position: absolute;
     top: 0;
-    border-radius: 3px 3px 0 0
+    border-radius: 2px 2px 0 0
 }
 
 .pnlm-zoom-out {
@@ -164,9 +170,9 @@ body {
     position: absolute;
     bottom: 0;
     background-position: 0 -26px;
-    border-top: 1px solid #ddd;
+    border-top: 0px solid #ddd;
     border-top-color: rgba(0,0,0,0.10);
-    border-radius: 0 0 3px 3px
+    border-radius: 2px 2px 0 0
 }
 
 .pnlm-fullscreen-toggle-button,.pnlm-orientation-button,.pnlm-hot-spot-debug-indicator {
@@ -182,7 +188,7 @@ body {
     height: 26px;
     margin: -13px 0 0 -13px;
     background-color: rgba(255,255,255,0.5);
-    border-radius: 13px;
+    border-radius: 30px;
     display: none
 }
 
@@ -206,7 +212,7 @@ body {
     position: absolute;
     bottom: 4px;
     background-color: rgba(0,0,0,0.7);
-    border-radius: 0 3px 3px 0;
+    border-radius: 30px;
     padding-right: 10px;
     color: #fff;
     text-align: left;
@@ -233,17 +239,18 @@ body {
 
 .pnlm-load-box {
     position: absolute;
+    border: 5px solid var(--bordercolorlight);
     top: 50%;
     left: 50%;
     width: 200px;
     height: 150px;
     margin: -75px 0 0 -100px;
     background-color: var(--bgcolorlight); 
-    border-radius: 3px;
+    border-radius: 30px;
     text-align: center;
     font-size: 20px;
     display: none;
-    color: #fff
+    color: var(--fontcolorlight)
 }
 
 .pnlm-load-box p {
@@ -271,7 +278,7 @@ body {
     -webkit-animation-timing-function: linear;
     height: 10px;
     width: 10px;
-    background-color: #fff;
+    color: var(--fontcolorlight);
     position: relative
 }
 
@@ -333,7 +340,7 @@ body {
      border-style: solid;
       border-width: 5px;
         border-color:var(--bordercolorlight);
-          border-radius: 10px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -341,7 +348,7 @@ body {
     height: 100px;
     margin: -50px 0 0 -100px;
     background-color: var(--bgcolorlight); 
-    border-radius: 3px;
+    border-radius: 30px;
     text-align: center;
     font-size: 20px;
     display: table;
@@ -350,7 +357,7 @@ body {
 }
 
 .pnlm-load-button:hover {
-    background-color: var(--bgcolorlight); 
+    background-color: var(--bordercolorlight); 
 }
 
 .pnlm-load-button p {
@@ -513,12 +520,12 @@ div.pnlm-tooltip:hover span:after {
 .pnlm-lbar {
     width: 150px;
     margin: 0 auto;
-    border: #fff 1px solid;
+    border: var(--fontcolorlight) 1px solid;
     height: 6px
 }
 
 .pnlm-lbar-fill {
-    background: #fff;
+    background: var(--fontcolorlight);
     height: 100%;
     width: 0
 }
