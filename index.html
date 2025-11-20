@@ -20,31 +20,21 @@
         padding-bottom: 3px;
         pointer-events: none;
     }
-    .ctrl {
-        padding: 8px 5px;
-        width: 30px;
-        text-align: center;
-        background: rgba(200, 200, 200, 0.8);
-        display: inline-block;
-        cursor: pointer;
-        pointer-events: auto;
-    }
-    .ctrl:hover {
-        background: rgba(200, 200, 200, 1);
-    }
+    
+
     </style>
     </style>
 </head>
 <body>
 
 <div id="panorama">
+    <button id="theme-toggle" class="ctrl">&#9789;</button>
 </div>
 <script>
-
 pannellum.viewer('panorama', {
     "showControls": true,
     "default": {
-        "firstScene": "gwoc4",
+        "firstScene": "gwoc1",
         "sceneFadeDuration": 1000
     },
     "scenes": {
@@ -184,7 +174,7 @@ pannellum.viewer('panorama', {
     }
 });
 </script>
-<button id="theme-toggle" class="button">Toggle Dark Mode</button>
+
 
 
 <script>
