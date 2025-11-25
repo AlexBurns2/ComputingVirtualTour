@@ -73,9 +73,9 @@ body {
   transform: translateZ(9999px);
   color:var(--fontcolorlight)
 }
-    .ctrl:hover {
-        background: var(--bordercolorlight);
-    }
+.ctrl:hover {
+    background: var(--bordercolorlight);
+}
 .pnlm-container {
     border-style: solid;
       border-width: 5px;
