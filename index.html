@@ -202,23 +202,29 @@ pannellum.viewer('panorama', {
 
 <div id="tutorial-popup">
     <h3>Tutorial</h3>
-    <p>sdlkfjsdlkjfsjdfsdkfsjfdsf</p>
-    <button id="tutorial-close">Close</button>
+    <p>Welcome to the Great Wall of China Virtual Tour! This tutorial will guide you through the different features of this site.
+    </p>
+    <p> 1. You can open and close the popup by clicking the tutorial button.</p>
+
 </div>
 
 <script>
     const tutorialBtn = document.getElementById('tutorial-button');
     const popup = document.getElementById('tutorial-popup');
-    const closeBtn = document.getElementById('tutorial-close');
+    var isOpen = false;
 
     tutorialBtn.onclick = () => {
-        popup.style.display = "block";
-    };
+        if (!isOpen) {
+            popup.style.display = "block";
+            isOpen = true;
 
-    closeBtn.onclick = () => {
-        popup.style.display = "none";
-    };
+        } else {
+            popup.style.display = "none";
+            isOpen = false;
 
+        }
+
+    };
 
 </script>
 
