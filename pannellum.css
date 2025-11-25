@@ -21,26 +21,17 @@ html, body {
 }
 
 #tutorial-popup {
-    display: none;
+    display: block;
     position: fixed;
-    align-items: center;
-    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
     background-color: var(--bgcolorlight);
     border: 5px solid var(--bordercolorlight);
     border-radius: 30px;
     padding: 5px 10px;
     z-index: 10000;
-}
-
-#tutorial-close {
-    margin-top: 10px;
-    width: 100%;
-    background-color: var(--bgcolorlight);
-    border: 2px solid var(--bordercolorlight);
-    border-radius: 30px;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 
 #tutorial-button {
