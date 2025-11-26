@@ -18,7 +18,7 @@ html, body {
 }
 
 #tutorial-popup {
-    display: none;
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -43,7 +43,7 @@ html, body {
 
 #tutorial-button {
  position: absolute;
-  bottom: 28px;
+  bottom: 38px;
   right: 38px;
   background-color: var(--bgcolorlight);
   border: 5px solid var(--bordercolorlight);
@@ -54,7 +54,9 @@ html, body {
   transform: translateZ(9999px);
   color:var(--fontcolorlight)
 }
-
+#tutorial-button:hover {
+    background: var(--bordercolorlight);
+}
 
 body {
     text-align: center;
