@@ -13,6 +13,112 @@ html, body {
               filter 0.4s ease;
 }
 
+.tutorial-popup {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: var(--bgcolorlight);
+    border: 5px solid var(--bordercolorlight);
+    border-radius: 30px;
+    padding: 5px 10px;
+    z-index: 10;
+    color: var(--fontcolorlight);
+}
+
+#popup0 {
+    display: block;
+}
+
+#popup1 {
+    display: none;
+}
+
+.tutorial-next {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    position: relative;
+    right: 0px;
+    background-color: var(--bgcolorlight);
+    border: 2px solid var(--bordercolorlight);
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: var(--fontcolorlight);
+}
+    .tutorial-next:hover {
+        background: var(--bordercolorlight);
+    }
+
+.tutorial-back {
+    margin-top: 10px;
+    width: 30%;
+    position: relative;
+    left: 0%;
+    background-color: var(--bgcolorlight);
+    border: 2px solid var(--bordercolorlight);
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+    .tutorial-back:hover {
+        background: var(--bordercolorlight);
+    }
+
+.tutorial-text {
+    margin-left:10px;
+    margin-right:10x;
+    color: var(--fontcolorlight);
+}
+
+#tutorial-button {
+ position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--bgcolorlight);
+  border: 5px solid var(--bordercolorlight);
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 2;
+  transform: translateZ(10px);
+  color:var(--fontcolorlight)
+
+}
+    #tutorial-button:hover {
+        background: var(--bordercolorlight);
+    }
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+#title {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+
+}
+
+#wikipedia-text {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 30px;
+    color:var(--fontcolorlight);
+}
+
 .fade-transition {
   transition: all 0.4s ease !important;
 }
