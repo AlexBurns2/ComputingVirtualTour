@@ -12,6 +12,27 @@ html, body {
           filter 0.4s ease;
 }
 
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+#title {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px
+
+}
+
 .container{
     width:100%;
     height:100%;
@@ -20,8 +41,7 @@ html, body {
     justify-content:center;
 }
 
-#tutorial-popup {
-    display: block;
+.tutorial-popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -31,7 +51,50 @@ html, body {
     border: 5px solid var(--bordercolorlight);
     border-radius: 30px;
     padding: 5px 10px;
-    z-index: 10000;
+    z-index: 10;
+}
+
+#popup0 {
+    display: block;
+}
+
+#popup1 {
+    display: none;
+}
+
+#tutorial-next {
+    margin-top: 10px;
+    width: 30%;
+    position: relative;
+    right: 0px;
+    background-color: var(--bgcolorlight);
+    border: 2px solid var(--bordercolorlight);
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+    #tutorial-next:hover {
+        background: var(--bordercolorlight);
+    }
+
+#tutorial-back {
+    margin-top: 10px;
+    width: 30%;
+    position: relative;
+    left: 0%;
+    background-color: var(--bgcolorlight);
+    border: 2px solid var(--bordercolorlight);
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+    #tutorial-back:hover {
+        background: var(--bordercolorlight);
+    }
+
+.tutorial-text {
+    margin-left:10px;
+    margin-right:10x;
 }
 
 #tutorial-button {
@@ -44,7 +107,7 @@ html, body {
   padding: 5px 10px;
   cursor: pointer;
   z-index: 2;
-  transform: translateZ(9999px);
+  transform: translateZ(10px);
   color:var(--fontcolorlight)
 
 }
