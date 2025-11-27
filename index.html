@@ -34,13 +34,12 @@
 
 <div id="panorama">
     <button id="theme-toggle" class="ctrl">&#9789;</button>
-</div>
-
-<div id="panorama">
     <button id="tutorial-button" class="tutorial-button">Tutorial</button>
 </div>
 
-<p>asdasdasdasdasdasdasdasdasd</p>
+<p id="wikipedia-text">The Great Wall of China (traditional Chinese: 萬里長城; simplified Chinese: 万里长城; pinyin: Wànlǐ Chángchéng, literally "ten thousand li long wall") is a series of fortifications in China. They were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. The first walls date to the 7th century BC; these were joined together in the Qin dynasty.[4][5] Successive dynasties expanded the wall system; the best-known sections were built by the Ming dynasty (1368–1644).
+
+</p>
 
 <script>
 pannellum.viewer('panorama', {
@@ -214,20 +213,25 @@ pannellum.viewer('panorama', {
     <h3>Tutorial</h3>
 
     <p class="tutorial-text"> Welcome to the Great Wall of China Virtual Tour! This tutorial will guide you through the different features of this site.</p>
-    <!-- <p> 1. You can open and close the popup by clicking the tutorial button.</p> -->
     <img src="/images/istockphoto-513921039-612x612.jpg" width="50">
     <br>
-    <button id="tutorial-back">Back</button>
-    <button id="tutorial-next">Next</button>
+    <button class="tutorial-next">Next</button>
 
 </div>
 
-<div class="tutorial-popup" id="popup1"> </div>
+<div class="tutorial-popup" id="popup1">
+    <h3>Tutorial</h3>
+    <p> 1. You can open and close the popup by clicking the tutorial button.</p>
+        <br>
+    <button class="tutorial-back">Back</button>
+    <button class="tutorial-next">Next</button>
+
+</div>
 
 <script>
     const tutorialBtn = document.getElementById('tutorial-button');
-    const next = document.getElementById('tutorial-next');
-    const back = document.getElementById('tutorial-back');
+    const next = document.getElementsByClassName("tutorial-next");
+    const back = document.getElementsByClassName("tutorial-back");
     const popups = [document.getElementById('popup0'), document.getElementById('popup1')];
     var isOpen = true;
     var popupDisplayed = 0;
@@ -249,13 +253,13 @@ pannellum.viewer('panorama', {
     };
 
     next.onclick = () => {
-        popupDisplayed++;
+        popupDisplayed = 1;
         displayPopup(popups, popupDisplayed, popupsAmount);
 
     }
 
     back.onclick = () => {
-        popupDisplayed--;
+        popupDisplayed = 0;
         displayPopup(popups, popupDisplayed, popupsAmount);
 
     }

@@ -29,8 +29,14 @@ html, body {
     text-align: left;
     margin-top: 15px;
     margin-left: 15px;
-    margin-bottom: 5px
+    margin-bottom: 0px;
 
+}
+
+#wikipedia-text {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 30px;
 }
 
 .container{
@@ -42,8 +48,8 @@ html, body {
 }
 
 .tutorial-popup {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
@@ -100,8 +106,8 @@ html, body {
 
 #tutorial-button {
  position: absolute;
-  bottom: 38px;
-  right: 28px;
+  bottom: 10px;
+  right: 10px;
   background-color: var(--bgcolorlight);
   border: 5px solid var(--bordercolorlight);
   border-radius: 30px;
