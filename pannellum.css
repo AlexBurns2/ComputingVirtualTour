@@ -62,8 +62,9 @@ html, body {
     display: none;
 }
 
-#tutorial-next {
-    margin-top: 10px;
+.tutorial-next {
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 30%;
     position: relative;
     right: 0px;
@@ -73,11 +74,11 @@ html, body {
     padding: 5px 10px;
     cursor: pointer;
 }
-    #tutorial-next:hover {
+    .tutorial-next:hover {
         background: var(--bordercolorlight);
     }
 
-#tutorial-back {
+.tutorial-back {
     margin-top: 10px;
     width: 30%;
     position: relative;
@@ -88,7 +89,7 @@ html, body {
     padding: 5px 10px;
     cursor: pointer;
 }
-    #tutorial-back:hover {
+    .tutorial-back:hover {
         background: var(--bordercolorlight);
     }
 

@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "${workspaceFolder}/index.html",
-            "runtimeExecutable": "YOUR PATH TO THE EXE"
+            "runtimeExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe"
         }
     ]
 }
