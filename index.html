@@ -240,8 +240,8 @@ pannellum.viewer('panorama', {
 
 <script>
     const tutorialBtn = document.getElementById('tutorial-button');
-    const next = document.getElementsByClassName("tutorial-next");
-    const back = document.getElementsByClassName("tutorial-back");
+    const nextButtons = document.getElementsByClassName("tutorial-next");
+    const backButtons = document.getElementsByClassName("tutorial-back");
     const popups = [document.getElementById('popup0'), document.getElementById('popup1')];
     var isOpen = true;
     var popupDisplayed = 0;
@@ -262,19 +262,22 @@ pannellum.viewer('panorama', {
         }
     };
 
-    next.onclick = () => {
-        popupDisplayed = 1;
-        console.log(popupDisplayed);
-        displayPopup(popups, popupDisplayed, popupsAmount);
-
+    for (let i = 0; i < nextButtons.length; i++) {
+        nextButtons[i].onclick = () => {
+            popupDisplayed = 1;
+            console.log(popupDisplayed);
+            displayPopup(popups, popupDisplayed, popupsAmount);
+        };
     }
 
-    back.onclick = () => {
-        popupDisplayed = 0;
-        console.log(popupDisplayed);
-        displayPopup(popups, popupDisplayed, popupsAmount);
-
+    for (let i = 0; i < backButtons.length; i++) {
+        backButtons[i].onclick = () => {
+            popupDisplayed = 0;
+            console.log(popupDisplayed);
+            displayPopup(popups, popupDisplayed, popupsAmount);
+        };
     }
+
 
     function displayPopup(popups, popupDisplayed, popupsAmount) {
         for (var i = 0; i < popupsAmount; i++) {
