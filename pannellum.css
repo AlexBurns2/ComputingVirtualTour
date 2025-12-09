@@ -31,13 +31,13 @@ html, body {
     text-align: left;
     margin-top: 15px;
     margin-left: 15px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
 }
 
 #wikipedia-text {
     text-align: left;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .container{
@@ -68,6 +68,28 @@ html, body {
 #popup1 {
     display: none;
 }
+
+#popup2 {
+    display: none;
+}
+
+#popup3 {
+    display: none;
+}
+
+#popup4 {
+    display: none;
+}
+
+#popup5 {
+    display: none;
+}
+
+#popup6 {
+    display: none;
+}
+
+
 
 .tutorial-next {
     margin-top: 5px;

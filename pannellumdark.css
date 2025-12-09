@@ -62,6 +62,7 @@ html, body {
     border-radius: 30px;
     padding: 5px 10px;
     cursor: pointer;
+    color: var(--fontcolorlight);
 }
     .tutorial-back:hover {
         background: var(--bordercolorlight);
