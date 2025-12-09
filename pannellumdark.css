@@ -15,7 +15,7 @@ html, body {
 
 .tutorial-popup {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
@@ -71,6 +71,10 @@ html, body {
 .tutorial-text {
     margin-left:10px;
     margin-right:10x;
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+    font-size: small;
     color: var(--fontcolorlight);
 }
 
@@ -111,14 +115,14 @@ html, body {
     text-align: left;
     margin-top: 15px;
     margin-left: 15px;
-    margin-bottom: 0px;
+    margin-bottom: -10px;
 
 }
 
 #wikipedia-text {
     text-align: left;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 50px;
     color:var(--fontcolorlight);
 }
 
